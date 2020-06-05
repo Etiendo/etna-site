@@ -6,8 +6,8 @@ def index(request):
     template = loader.get_template('index.html')
 
     context = {
-        'enabled': True,
-        'methodology': True,
+      'enabled': True,
+      'methodology': True,
     }
 
     return HttpResponse(template.render(context, request))

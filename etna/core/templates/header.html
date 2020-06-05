@@ -1,10 +1,26 @@
-{% block header %}
-        <div class="row">
-                <div class="col-6">
-                        <p class="red-color">Homepage works !</p>
-                </div>
-                <div class="col-6">
-                        <p>Test</p>
-                </div>
-        </div>
-{% endblock  %}
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="/">
+    <img src="{% static 'pictures/logo-etna.png' %}" width="150" height="auto" class="d-inline-block align-content-center" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto nav-fill">
+      <li class="nav-item d-flex flex-column justify-content-center">
+        <a class="nav-link" href="#">Présentation <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item d-flex flex-column justify-content-center">
+        <a class="nav-link" href="#">Menu</a>
+      </li>
+      <li class="nav-item d-flex flex-column justify-content-center">
+        <a class="nav-link" href="#">Réserver/Privatiser</a>
+      </li>
+      <li class="nav-item d-flex flex-column justify-content-center">
+        <a class="nav-link" href="#">Contacter</a>
+      </li>
+    </ul>
+  </div>
+</nav>

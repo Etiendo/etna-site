@@ -1,4 +1,16 @@
-.red-color {
-    color: green;
-    font-size: 100px;
+nav .navbar-nav .nav-link {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+  padding: 0 1rem;
+}
+
+.nav-item a {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.nav-item a:hover {
+ background-color: white;
 }
