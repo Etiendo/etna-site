@@ -14,3 +14,32 @@ nav .navbar-nav .nav-link {
 .nav-item a:hover {
  background-color: white;
 }
+
+/* Address */
+.address {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(203 143 86);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+/* Main picture */
+.main-picture {
+  text-align: center;
+  align-items: center;
+  background-image: url(/static/pictures/bar-picture.jpg);
+  height: 500px;
+}
+
+.title {
+  color: white;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: white;
+  font-size: 50px;
+}
