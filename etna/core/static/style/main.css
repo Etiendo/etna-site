@@ -1,3 +1,10 @@
+* {
+ font-size: 100%;
+ font-family: normal normal normal 84px/1.4em 'playfair display',serif;
+}
+
+
+/* navebar */
 nav .navbar-nav .nav-link {
   margin-left: 20px !important;
   margin-right: 20px !important;
@@ -28,9 +35,10 @@ nav .navbar-nav .nav-link {
 /* Main picture */
 .main-picture {
   text-align: center;
-  align-items: center;
   background-image: url(/static/pictures/bar-picture.jpg);
   height: 500px;
+  line-height: 500px;
+  background-size: cover;
 }
 
 .title {
@@ -42,4 +50,20 @@ nav .navbar-nav .nav-link {
 .subtitle {
   color: white;
   font-size: 50px;
+}
+
+/* Presentation */
+.paragraph {
+  text-align: center;
+  padding: 50px;
+  height: 300px;
+}
+
+.paragraph-title {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.paragraph-text {
+  font-size: 15px;
 }
