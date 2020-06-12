@@ -19,13 +19,26 @@
 </head>
 
 <body style="overflow-x: hidden;">
-  {% include 'header.html' %}
-  {% include 'location.html' %}
-  {% include 'main-picture.html' %}
-  {% include 'privatise.html' %}
-  {% include 'presentation.html' %}
-  {% include 'menu.html' %}
-  {% include 'contact.html' %}
-
+  <div class="container-fluid p-0">
+    {% include 'header.html' %}
+    {% include 'location.html' %}
+    {% include 'main-picture.html' %}
+    {% include 'privatise.html' %}
+    {% include 'presentation.html' %}
+    {% include 'menu.html' %}
+    {% include 'contact.html' %}
+  </div>
 </body>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
 </html>

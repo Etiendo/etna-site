@@ -37,8 +37,13 @@ nav .navbar-nav .nav-link {
   text-align: center;
   background-image: url(/static/pictures/bar-picture.jpg);
   height: 500px;
-  line-height: 500px;
   background-size: cover;
+  opacity: 0.8;
+}
+
+.picture-text {
+  position: relative;
+  top: 30%;
 }
 
 .title {
@@ -54,9 +59,14 @@ nav .navbar-nav .nav-link {
 
 /* Presentation */
 .paragraph {
-  text-align: center;
-  padding: 50px;
-  height: 300px;
+  padding: 30px;
+  height: 200px;
+}
+
+.paragraph-container {
+  @media (min-height: 500px) {
+    display: inline;
+  }
 }
 
 .paragraph-title {
@@ -66,4 +76,8 @@ nav .navbar-nav .nav-link {
 
 .paragraph-text {
   font-size: 15px;
+}
+
+.text-one {
+  scroll-behavior: smooth;
 }
