@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="{% static 'style/main.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/fontawesome.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/all.css' %}">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
           integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
           crossorigin="anonymous"></script>
@@ -19,14 +20,20 @@
 </head>
 
 <body style="overflow-x: hidden;">
-  <div class="container-fluid p-0">
-    {% include 'header.html' %}
-    {% include 'location.html' %}
-    {% include 'main-picture.html' %}
-    {% include 'privatise.html' %}
-    {% include 'presentation.html' %}
-    {% include 'menu.html' %}
-    {% include 'contact.html' %}
+  {% include 'header.html' %}
+  {% include 'main-picture.html' %}
+  {% include 'privatise.html' %}
+  {% include 'presentation.html' %}
+  {% include 'menu.html' %}
+  <div class="row">
+    <div class="col-12">
+      <div class="text-center p-2">plan</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-center p-2">footer infos</div>
+    </div>
   </div>
 </body>
 
