@@ -1,11 +1,5 @@
 * {
- font-size: 100%;
  font-family: 'Varela Round';
-}
-
-a {
-  color: inherit !important;
-  text-decoration: none !important;
 }
 
 
@@ -58,19 +52,19 @@ nav .navbar-nav .nav-link {
 
 .title {
   color: white;
-  font-size: 120px;
+  font-size: 90px;
   text-transform: uppercase;
 }
 
 .subtitle {
   color: white;
-  font-size: 70px;
+  font-size: 50px;
 }
 
 /* Presentation */
 
 .paragraph-title {
-  font-size: 60px;
+  font-size: 35px;
   text-transform: uppercase;
   color: rgb(42, 39, 37);
 }
@@ -85,6 +79,11 @@ nav .navbar-nav .nav-link {
 }
 
 /* menu */
+a#btn-menu {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 .btn-menu {
   background-color: rgb(203 143 86);
   color: white;
