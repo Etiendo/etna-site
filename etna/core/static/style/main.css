@@ -95,3 +95,9 @@ a#btn-menu {
   border: 2px solid rgb(203 143 86);
   color: rgb(42, 39, 37);
 }
+
+/* map */
+.map {
+  height: 300px;
+  width: auto;
+}

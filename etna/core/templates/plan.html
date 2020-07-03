@@ -1,0 +1,23 @@
+{% load static %}
+<a class="anchor" id="plan"></a>
+<div class="row no-gutters justify-content-center">
+  <div class="col-12 text-center">
+    <div id='map' class="map"></div>
+  </div>
+</div>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZXRpZW5kbyIsImEiOiJjamNhbTY4NDgwOXoxMnptdXIyb2ZvZ2k5In0.zCS4uLuoY-v6bfnDzaEoww';
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/etiendo/ckc616ym80ks71jmqdc81dwfe',
+    center: [2.338220, 48.854548],
+    zoom: 15
+  });
+  map.addControl(new mapboxgl.NavigationControl());
+  map.scrollZoom.disable();
+
+  const marker = new mapboxgl.Marker()
+  .setLngLat([2.338220, 48.854548])
+  .addTo(map);
+</script>
