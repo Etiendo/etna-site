@@ -20,7 +20,7 @@ class TapasCourse(models.Model):
 
 
 class PresentationText(models.Model):
-    text_type = models.CharField(max_length=100, choices=DESCRIPTION_TYPES)
+    text_type = models.CharField(max_length=100, choices=DESCRIPTION_TYPES, unique=True)
     title = models.CharField(max_length=100)
     description = models.TextField(max_length=500)
 
