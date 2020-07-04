@@ -101,3 +101,16 @@ a#btn-menu {
   height: 300px;
   width: auto;
 }
+
+/* footer */
+.footer {
+  background-color: rgb(203 143 86) !important;
+}
+
+.footer-text {
+  color: white;
+}
+
+.social-icon {
+  height: 30px;
+}
