@@ -1,17 +1,17 @@
 {% load static %}
 <a class="anchor" id="presentation"></a>
-<div class="container-fluid bg-white py-3 mb-5 ls-1">
+<div class="container-fluid bg-white py-3 mb-2 ls-1">
   <div class="row no-gutters justify-content-center">
     <div class="col-12 col-lg-10 p-4 text-center">
       <div class="paragraph-title">
-        Etna, embarquez à bord d'une formidable aventure humaine
+          {{ restaurant_presentation.title }}
       </div>
     </div>
   </div>
   <div class="row no-gutters justify-content-center">
     <div class="col-6 col-lg-6 p-4 text-center">
       <div class="paragraph-text">
-        Dans une ambiance unique au cœur de St Germain des Prés, venez découvrir les vins naturels et une restauration de qualité. En voyage vers la Sicile des années 50, Etna accompagnera vos soirées à Paris dans une atmosphère humaine et chaleureuse. Vous êtes ici chez vous.
+        {{ restaurant_presentation.description }}
       </div>
     </div>
   </div>
@@ -19,5 +19,10 @@
     <div class="col-12 col-lg-12 text-center">
       <button class="btn btn-menu"><a id="btn-menu" href="#menu">Découvrez notre menu</a></button>
     </div>
+  </div>
+</div>
+<div class="row no-gutters justify-content-center">
+  <div class="col-12 col-lg-10 p-4 text-center">
+    <hr>
   </div>
 </div>

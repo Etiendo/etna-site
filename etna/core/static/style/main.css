@@ -96,6 +96,11 @@ a#btn-menu {
   color: rgb(42, 39, 37);
 }
 
+.tapas-list {
+  list-style-type:none;
+  padding: 0;
+}
+
 /* map */
 .map {
   height: 300px;

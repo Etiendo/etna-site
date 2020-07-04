@@ -2,8 +2,17 @@
 <a class="anchor" id="menu"></a>
 <div class="container-fluid bg-white py-3 mb-5 ls-1">
   <div class="row no-gutters justify-content-center">
-    <div class="col-12 col-lg-10 p-4 text-center paragraph">
-      <p class="paragraph-title">Menu</p>
+    <div class="col-12 col-lg-10 p-2 text-center">
+      <p class="paragraph-title">Tapas</p>
+    </div>
+  </div>
+  <div class="row no-gutters justify-content-center">
+    <div class="col-12 col-lg-10 p-2 text-center">
+      <ul class="tapas-list">
+        {% for tapas in tapas_courses %}
+          <li class="text-center tapas-item">{{ tapas.name }} - {{ tapas.price|floatformat }}€</li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </div>
