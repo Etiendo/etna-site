@@ -2,6 +2,13 @@
  font-family: 'Varela Round';
 }
 
+a.anchor#presentation {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 
 /* navbar */
 
@@ -32,7 +39,8 @@ nav .navbar-nav .nav-link {
   padding: 10px;
   background-color: rgb(203 143 86);
   text-transform: uppercase;
-  color: rgb(42, 39, 37);
+  color: white;
+  font-weight: bold;
 }
 
 
@@ -42,7 +50,6 @@ nav .navbar-nav .nav-link {
   background-image: url(/static/pictures/bar-picture.jpg);
   height: 500px;
   background-size: cover;
-  opacity: 0.8;
 }
 
 .picture-text {
@@ -99,6 +106,20 @@ a#btn-menu {
 .tapas-list {
   list-style-type:none;
   padding: 0;
+}
+
+.wine-image {
+  background-image: url(/static/pictures/wine.jpg);
+  text-align: center;
+  height: 1000px;
+  background-size: cover;
+}
+
+.tapas-image {
+  background-image: url(/static/pictures/tapas-slide.jpg);
+  text-align: center;
+  height: 1000px;
+  background-size: cover;
 }
 
 /* map */
