@@ -1,7 +1,24 @@
 {% load static %}
 <a class="anchor" id="menu"></a>
 <div class="container-fluid bg-white py-3 mb-2 px-0 ls-1">
-  <div class="row no-gutters pt-4 justify-content-center">
+<div class="row no-gutters pt-4 justify-content-center">
+    <div class="col-lg-6 p-2 text-center wine-image"></div>
+    <div class="col-lg-6 col-xs-12 p-2 text-center my-auto">
+      <div class="row no-gutters justify-content-center">
+        <div class="col-12 col-lg-10 p-2 text-center">
+          <div class="paragraph-title">{{ wine_presentation.title }}</div>
+        </div>
+      </div>
+      <div class="row no-gutters justify-content-center">
+        <div class="col-6 col-lg-6 p-4 text-center">
+          <div class="paragraph-text">
+            {{ wine_presentation.description }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters pb-4 justify-content-center">
     <div class="col-lg-6 col-xs-12 p-2 text-center my-auto">
       <div class="row no-gutters justify-content-center">
         <div class="col-12 col-lg-10 p-2 text-center">
@@ -19,22 +36,5 @@
       </div>
     </div>
     <div class="col-lg-6 p-2 text-center tapas-image"></div>
-  </div>
-  <div class="row no-gutters pb-4 justify-content-center">
-    <div class="col-lg-6 p-2 text-center wine-image"></div>
-    <div class="col-lg-6 col-xs-12 p-2 text-center my-auto">
-      <div class="row no-gutters justify-content-center">
-        <div class="col-12 col-lg-10 p-2 text-center">
-          <div class="paragraph-title">{{ wine_presentation.title }}</div>
-        </div>
-      </div>
-      <div class="row no-gutters justify-content-center">
-        <div class="col-6 col-lg-6 p-4 text-center">
-          <div class="paragraph-text">
-            {{ wine_presentation.description }}
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
