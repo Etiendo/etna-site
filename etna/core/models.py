@@ -13,10 +13,12 @@ class TapasCourse(models.Model):
     name = models.CharField(max_length=100, unique=True)
     price = models.FloatField(
         validators=[MinValueValidator(0), MaxValueValidator(1000)])
+    order = models.IntegerField(validators=[
+                                MinValueValidator(0), MaxValueValidator(100)], default=1)
     comments = models.TextField(max_length=100, null=True, blank=True)
 
     def __str__(self):
-        return '{} à {}'.format(self.name, self.price)
+        return '{} à {}, n°{}'.format(self.name, self.price, self.order)
 
 
 class PresentationText(models.Model):
@@ -25,4 +27,4 @@ class PresentationText(models.Model):
     description = models.TextField(max_length=500)
 
     def __str__(self):
-        return 'Le texte sur {} nommé {}'.format(self.text_type, self.title)
+        return 'Le texte sur {} : {}'.format(self.text_type, self.title)
