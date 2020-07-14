@@ -6,7 +6,7 @@
     <div class="col-lg-6 col-xs-12 p-2 text-center my-auto">
       <div class="row no-gutters justify-content-center">
         <div class="col-12 col-lg-10 p-2 text-center">
-          <div class="paragraph-title">{{ wine_presentation.title }}</div>
+          <div class="paragraph-title">{{ wine_presentation.titre }}</div>
         </div>
       </div>
       <div class="row no-gutters justify-content-center">
@@ -22,14 +22,14 @@
     <div class="col-lg-6 col-xs-12 p-2 text-center my-auto">
       <div class="row no-gutters justify-content-center">
         <div class="col-12 col-lg-10 p-2 text-center">
-          <p class="paragraph-title">Les Tapas</p>
+          <p class="paragraph-title">{% if language == 'EN'%}Les {% endif %}Tapas</p>
         </div>
       </div>
       <div class="row no-gutters justify-content-center">
         <div class="col-12 col-lg-10 p-2 text-center">
           <ul class="tapas-list">
             {% for tapas in tapas_courses %}
-              <li class="text-center tapas-item">{{ tapas.name }} - {{ tapas.price|floatformat }}€</li>
+              <li class="text-center tapas-item">{{ tapas.nom }} - {{ tapas.prix|floatformat }}€</li>
             {% endfor %}
           </ul>
         </div>

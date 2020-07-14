@@ -12,27 +12,30 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto nav-fill p-4">
         <li class="nav-item d-flex flex-column justify-content-center">
-          <a class="nav-link" href="#home">Accueil</a>
+          <a class="nav-link" href="#home">{% if language == 'EN'%}Accueil{% else%}Home{% endif %}</a>
         </li>
         <li class="nav-item d-flex flex-column justify-content-center">
-          <a class="nav-link" href="#presentation">A propos de nous</a>
+          <a class="nav-link" href="#presentation">{% if language == 'EN'%}A propos de nous{% else%}About us{% endif %}</a>
         </li>
         <li class="nav-item d-flex flex-column justify-content-center">
-          <a class="nav-link" href="#menu">Carte</a>
+          <a class="nav-link" href="#menu">{% if language == 'EN'%}Carte{% else%}Menu{% endif %}</a>
         </li>
         <li class="nav-item d-flex flex-column justify-content-center">
-          <a class="nav-link" href="https://ib.guestonline.fr/instabook/bookings/LsYJ1Gg" target="_blank">Réserver/Privatiser</a>
+          <a class="nav-link" href="https://ib.guestonline.fr/instabook/bookings/LsYJ1Gg" target="_blank">{% if language == 'EN'%}Réserver/Privatiser{% else%}Book a table{% endif %}</a>
         </li>
         <li class="nav-item d-flex flex-column justify-content-center">
           <a class="nav-link" href="#plan">Contact</a>
         </li>
       </ul>
+      <button class="btn btn-menu">
+        <a style="color: inherit !important;" href="{% url 'index' language=language %}">{{ language }}</a>
+      </button>
     </div>
   </nav>
   <div class="row">
     <div class="col-12">
       <div class="address">
-        33 rue Mazarine - Paris VI | Ouvert du mardi au samedi de 17h à 2h
+        33 rue Mazarine - Paris VI | {% if language == 'EN'%}Ouvert du mardi au samedi de 17h à 2h{% else%}Open Tuesday to Saturday from 5pm to 2am{% endif %}
       </div>
     </div>
   </div>

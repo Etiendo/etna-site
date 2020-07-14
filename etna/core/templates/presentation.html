@@ -4,7 +4,7 @@
   <div class="row no-gutters justify-content-center">
     <div class="col-12 col-lg-10 p-4 text-center">
       <div class="paragraph-title">
-          {{ restaurant_presentation.title }}
+          {{ restaurant_presentation.titre }}
       </div>
     </div>
   </div>
@@ -17,7 +17,9 @@
   </div>
   <div class="row no-gutters justify-content-center">
     <div class="col-12 col-lg-12 text-center">
-      <button class="btn btn-menu"><a id="btn-menu" href="#menu">Découvrez notre carte</a></button>
+      <button class="btn btn-menu"><a id="btn-menu" href="#menu">
+        {% if language == 'EN'%}Découvrez notre carte{% else%}Discover our menu{% endif %}
+      </a></button>
     </div>
   </div>
 </div>
