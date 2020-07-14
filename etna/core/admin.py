@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import TapasCourse
-from .models import PresentationText
+from .models import Tapas
+from .models import TexteDePresentation
 
 # Register your models here.
-admin.site.register(TapasCourse)
-admin.site.register(PresentationText)
+admin.site.register(Tapas)
+admin.site.register(TexteDePresentation)

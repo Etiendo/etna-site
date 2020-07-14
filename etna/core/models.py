@@ -8,23 +8,30 @@ DESCRIPTION_TYPES = [
     ('WINE', 'VINS'),
 ]
 
+LANGUAGES = [
+  ('FR', 'FR'),
+  ('EN', 'EN')
+]
 
-class TapasCourse(models.Model):
-    name = models.CharField(max_length=100, unique=True)
-    price = models.FloatField(
+
+class Tapas(models.Model):
+    nom = models.CharField(max_length=100, unique=True)
+    prix = models.FloatField(
         validators=[MinValueValidator(0), MaxValueValidator(1000)])
-    order = models.IntegerField(validators=[
+    ordre = models.IntegerField(validators=[
                                 MinValueValidator(0), MaxValueValidator(100)], default=1)
-    comments = models.TextField(max_length=100, null=True, blank=True)
+    commentaires = models.TextField(max_length=100, null=True, blank=True)
+    langue = models.CharField(max_length=100, choices=LANGUAGES, default='FR')
 
     def __str__(self):
-        return '{} à {}, n°{}'.format(self.name, self.price, self.order)
+        return '{} à {}€, n°{}'.format(self.nom, self.prix, self.ordre)
 
 
-class PresentationText(models.Model):
-    text_type = models.CharField(max_length=100, choices=DESCRIPTION_TYPES, unique=True)
-    title = models.CharField(max_length=100)
+class TexteDePresentation(models.Model):
+    type_de_texte = models.CharField(max_length=100, choices=DESCRIPTION_TYPES)
+    titre = models.CharField(max_length=100)
     description = models.TextField(max_length=500)
+    langue = models.CharField(max_length=100, choices=LANGUAGES, default='FR')
 
     def __str__(self):
-        return 'Le texte sur {} : {}'.format(self.text_type, self.title)
+        return '{} : {} - {}'.format(self.type_de_texte, self.titre, self.langue)
