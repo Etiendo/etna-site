@@ -29,7 +29,7 @@
         <div class="col-12 col-lg-10 p-2 text-center">
           <ul class="tapas-list">
             {% for tapas in tapas_courses %}
-              <li class="text-center tapas-item">{{ tapas.nom }} - {{ tapas.prix|floatformat }}€</li>
+              <li class="text-center tapas-item">{{ tapas.nom }} - {{ tapas.prix|floatformat }}€{% if tapas.commentaires %} - {{ tapas.commentaires }}{% endif %}</li>
             {% endfor %}
           </ul>
         </div>
