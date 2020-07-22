@@ -47,7 +47,7 @@ nav .navbar-nav .nav-link {
 /* Main picture */
 .main-picture {
   text-align: center;
-  background-image: url(/static/pictures/bar-picture.jpg);
+  background-image: url(/static/pictures/bar-picture.jpeg);
   height: 500px;
   background-size: cover;
 }
@@ -109,14 +109,14 @@ a#btn-menu {
 }
 
 .wine-image {
-  background-image: url(/static/pictures/wine.jpg);
+  background-image: url(/static/pictures/wine.jpeg);
   text-align: center;
   height: 1000px;
   background-size: cover;
 }
 
 .tapas-image {
-  background-image: url(/static/pictures/tapas-slide.jpg);
+  background-image: url(/static/pictures/tapas.jpeg);
   text-align: center;
   height: 1000px;
   background-size: cover;
